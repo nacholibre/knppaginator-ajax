@@ -13,7 +13,7 @@ knp_paginator:
         ..
 ```
         
-After `{{ knp_pagination_render(subProducts) }}` you shoul call
+After `{{ knp_pagination_render(products) }}` you shoul call
 
 ```
 $(function() {
