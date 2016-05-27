@@ -21,8 +21,12 @@ $(function() {
 
     knp.init({
         'loadMoreText': 'Load More', //load more text
+        'loadingText': 'Loading..', //loading text
         'elementsSelector': '#elements', //this is where the script will append and search results
         'paginationSelector': 'ul.pagination', //pagination selector
     });
 });
 ```
+
+`knp.setAjaxLoadedContent(html);` is used when you need to reload pagination
+because you've added content manually with javascript.
