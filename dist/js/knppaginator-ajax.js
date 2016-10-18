@@ -92,7 +92,7 @@ KnpPaginatorAjax.prototype.clickListener = function() {
             //setAjaxLoadedContent is used
             $(options.elementsSelector).append(data.filter(options.elementsSelector));
         } else {
-            $(options.elementsSelector).append(elements);
+            $(options.elementsSelector).append(elements.html());
         }
 
         //$(options.elementsSelector).html(data.find('#products').html());
