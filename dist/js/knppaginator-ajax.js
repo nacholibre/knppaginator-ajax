@@ -109,3 +109,7 @@ KnpPaginatorAjax.prototype.clickListener = function() {
         self.loading = false;
     });
 };
+
+module.exports = {
+    KnpPaginatorAjax
+};
