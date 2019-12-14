@@ -30,3 +30,22 @@ $(function() {
 
 `knp.setAjaxLoadedContent(html);` is used when you need to reload pagination
 because you've added content manually with javascript.
+
+
+## Usage with Symfony 4+ and Webpack
+
+```javascript
+// assets/js/app.js
+
+import { KnpPaginatorAjax } from '../../vendor/nacholibre/knppaginator-ajax/dist/js/knppaginator-ajax.js';
+
+var knp = new KnpPaginatorAjax();
+knp.init({
+    'loadMoreText': 'Load More', //load more text
+    'loadingText': 'Loading..', //loading text
+    'elementsSelector': '#elements', //this is where the script will append and search results
+    'paginationSelector': 'ul.pagination', //pagination selector
+});
+
+
+```
